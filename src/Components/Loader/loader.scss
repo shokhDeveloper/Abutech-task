@@ -1,0 +1,8 @@
+@use "../../Utils/scss/functions.scss";
+.load{
+    background: #fff;
+    width: 100%;
+    min-height: 100vh;
+    @include functions.flex(center);
+    text-align: center;
+}

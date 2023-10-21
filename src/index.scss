@@ -1,0 +1,33 @@
+@use "./Utils/scss/functions.scss";
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/roboto-flex-v9-cyrillic_cyrillic-ext_greek_latin_latin-ext_vietnamese-regular.woff2") format("woff2"); 
+}
+body{
+  background: #1d1d2c;
+  font-family: "Roboto Flex";
+}
+.hero{
+  margin-top: 7rem;
+}
+.hero-inner{
+  @include functions.flex(center);
+}
+.hero-inner img{
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+.loader-request{
+  @include functions.flex(center);
+  min-height: 60vh;
+  text-align: center;
+  width: 100%;
+}
+.loader-request .loader-request-title{
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 2px;
+}

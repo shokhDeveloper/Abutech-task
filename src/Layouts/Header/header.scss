@@ -1,0 +1,100 @@
+@use "../../Utils/scss/functions.scss";
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #fff;
+}
+.site-logo {
+  filter: invert(1);
+  width: 170px;
+  object-fit: contain;
+}
+.header-inner {
+  padding: 1rem 0rem;
+  @include functions.flex(space-between);
+}
+.header-inner .header-child-box:nth-child(1) {
+  @include functions.flex(flex-start);
+}
+.header-inner .header-child-box:nth-child(2){
+  font-size: 23px;
+  color: #1d1d2c;
+}
+.header-child-box:nth-child(3){
+    flex-basis: 15%;
+    @include functions.flex(flex-end);
+    position: relative;
+}
+.header-child-box:nth-child(3) .header-default-language{
+    padding: 0 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 3rem  ;
+}
+.header-child-box:nth-child(3) .site-languages-box{
+    position: absolute;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    top: 2rem;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.753);
+}
+.site-languages-box {
+    padding: 0 1rem;
+}
+.site-languages-box p{
+    margin: 0.5rem 0rem;
+}
+.site-languages-box .site-language-box{
+    @include functions.flex(flex-start);
+    margin: 1rem 0rem;
+}
+.site-languages-box .site-language-box input[type="radio"]{
+    margin-right: 1rem;
+    accent-color: #0a4e4e;
+}       
+.site-languages-box .site-language-discription:hover{
+    color: #0a4e4e;
+    text-decoration: underline;
+}
+.header-child-box:nth-child(2) *{
+  margin: 0;
+  padding: 0;
+}
+.header-child-box:nth-child(3) .header-default-language{
+    background-size: 40px;
+    background-position: left;
+    background-repeat: no-repeat;
+   background-image: url("../../assets/images/America-Flag.png"); 
+}
+.site-languages-box .site-language-box span:hover{
+    color: #0a4e4e;
+    text-decoration: underline;
+}
+.hero{
+  width: 100%;
+  height: auto;
+}
+.hero-list{
+  width: 40%;
+  @include functions.flex(space-between);
+  margin: 0;
+  padding: 1rem 0rem;
+  list-style: none;
+}
+.hero-list .hero-link{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.5rem;
+}
+.hero-link-active{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #fff;
+}
